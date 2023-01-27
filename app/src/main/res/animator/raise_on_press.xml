@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Values stolen from mtrl_btn_state_list_anim -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <objectAnimator
+            android:duration="100"
+            android:propertyName="translationZ"
+            android:valueTo="6dp"
+            android:valueType="floatType" />
+    </item>
+    <item>
+        <objectAnimator
+            android:duration="100"
+            android:propertyName="translationZ"
+            android:startDelay="100"
+            android:valueTo="0dp"
+            android:valueType="floatType" />
+    </item>
+</selector>

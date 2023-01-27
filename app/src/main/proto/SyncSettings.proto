@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.healthmetrix.myscience.feature.sync";
+option java_multiple_files = true;
+
+message SyncSettings {
+
+  bool is_background_sharing_enabled = 1;
+
+  bool flag_auth_failed = 2;
+}

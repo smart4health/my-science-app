@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+option java_package = "com.healthmetrix.myscience.feature.login";
+option java_multiple_files = true;
+
+message LoginSettings {
+
+  enum LoginState {
+    WELCOME = 0;
+    GDPR_CONSENT = 1 [deprecated = true];
+    CONFIGURE = 2;
+    SIGN = 3;
+    REVIEW = 4;
+    CONNECT_CHDP = 5;
+    SELECT_DATA = 6;
+    FINISHED = 7;
+    DASHBOARD = 8;
+  }
+
+  LoginState login_state = 1;
+
+  message ConsentOption {
+    int32 option_id = 1;
+    bool consented = 2;
+  }
+
+  repeated ConsentOption consent_options = 2;
+
+  message FirebaseInfo {
+    string user_id = 1;
+    string bearer_token = 2;
+  }
+
+  oneof option_info {
+    FirebaseInfo firebase_info = 3;
+  }
+
+  oneof option_document_id {
+    string document_id = 4;
+  }
+
+  message ChdpInfo {
+    string user_id = 1;
+    bytes user_secret = 2;
+  }
+
+  oneof option_chdp_info {
+    ChdpInfo chdp_info = 5;
+  }
+}

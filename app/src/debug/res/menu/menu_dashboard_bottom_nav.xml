@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_status"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/dashboard_status_toolbar_text" />
+
+    <item
+        android:id="@+id/action_my_data"
+        android:icon="@drawable/ic_baseline_insert_chart_24"
+        android:title="@string/dashboard_my_data_toolbar_text" />
+
+    <item
+        android:id="@+id/action_messages"
+        android:icon="@drawable/ic_baseline_email_24"
+        android:title="@string/dashboard_messages_toolbar_text" />
+
+
+    <item
+        android:id="@+id/action_debug"
+        android:icon="@drawable/ic_baseline_bug_report_24"
+        android:title="@string/dashboard_debug_toolbar_text" />
+
+</menu>

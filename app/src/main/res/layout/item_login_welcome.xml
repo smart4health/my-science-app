@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="?attr/minTouchTargetSize">
+
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/welcome_carousel_content_description"
+        app:layout_constraintBottom_toTopOf="@id/welcome_image_description"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:src="@drawable/ic_all_nobg_01" />
+
+    <TextView
+        android:id="@+id/welcome_image_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="?textAppearanceBody1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/welcome_image"
+        app:layout_constraintStart_toStartOf="@id/welcome_image"
+        app:layout_constraintTop_toBottomOf="@id/welcome_image"
+        tools:text="This is an image in ye old welcome carousel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

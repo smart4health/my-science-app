@@ -1,0 +1,71 @@
+<resources>
+
+    <style name="Widget.Smart4Health.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary" />
+
+    <style name="Widget.Smart4Health.Button" parent="Widget.MaterialComponents.Button">
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="Widget.Smart4Health.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="backgroundOverlayColorAlpha">1</item>
+    </style>
+
+    <style name="TextAppearance.Smart4Health.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/roboto_slab_regular</item>
+    </style>
+
+    <!-- Used in toolbar -->
+    <style name="TextAppearance.Smart4Health.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="TextAppearance.Smart4Health.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="TextAppearance.Smart4Health.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="TextAppearance.Smart4Health.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/lato_light</item>
+    </style>
+
+    <style name="ShapeAppearance.Smart4Health.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Smart4Health.RoundedCorners" parent="">
+        <item name="cornerSize">16dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ShapeAppearance.Smart4Health.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="MaterialAlertDialog.Smart4Health.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MaterialAlertDialog.Smart4Health.Body.Text" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+    </style>
+
+    <style name="MaterialAlertDialog.Smart4Health" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Smart4Health.MediumComponent</item>
+    </style>
+
+    <style name="Widget.Smart4Health.BottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearance">@style/ShapeAppearance.Smart4Health.LargeComponent</item>
+        <item name="behavior_hideable">false</item>
+    </style>
+
+    <style name="ShapeAppearance.Smart4Health.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>

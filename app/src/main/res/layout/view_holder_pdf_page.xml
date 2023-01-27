@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/pdf_page_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/login_review_consent_pdf_page_content_description"
+        android:elevation="4dp"
+        android:outlineProvider="bounds"
+        tools:layout_height="100dp"
+        tools:layout_width="100dp" />
+
+</FrameLayout>

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.healthmetrix.myscience.feature.messages";
+option java_multiple_files = true;
+
+message MessagesSettings {
+  bool is_enabled = 1;
+  int64 last_fetched_at = 2;
+}

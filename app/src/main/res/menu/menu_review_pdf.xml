@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_review_pdf_view_externally"
+        android:icon="@drawable/ic_baseline_open_in_new_24"
+        android:title="@string/menu_login_review_consent_view_externally"
+        android:enabled="false"
+        app:showAsAction="ifRoom" />
+</menu>

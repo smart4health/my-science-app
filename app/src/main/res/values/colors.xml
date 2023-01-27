@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="s4h_dark_blue_100">#FF06344F</color>
+    <color name="s4h_dark_blue_80">#CC06344F</color>
+    <color name="s4h_dark_blue_40">#6606344F</color>
+    <color name="s4h_dark_blue_20">#3306344F</color>
+    <color name="s4h_turquoise">#34A1AD</color>
+    <color name="s4h_dark_turquoise">#32828d</color>
+    <color name="s4h_darker_turquoise">#1c626d</color>
+    <color name="s4h_light_blue">#2789C2</color>
+    <color name="s4h_orange">#F99133</color>
+
+    <color name="s4h_grey_100">#FF53646F</color>
+    <color name="s4h_grey_30">#4D53646F</color>
+    <color name="s4h_grey_30_opaque">#dadada</color>
+    <color name="s4h_grey_20">#3353646F</color>
+    <color name="s4h_grey_10">#1A53646F</color>
+    <color name="s4h_black">#121414</color>
+    <color name="s4h_backgrounds">#F3F3F3</color>
+    <color name="s4h_white">#FFFFFF</color>
+
+    <color name="material_green_800">#2E7D32</color>
+
+</resources>

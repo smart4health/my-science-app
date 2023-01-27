@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="dashboard_debug_toolbar_text" tools:ignore="MissingTranslation">Debug</string>
+    <string name="dashboard_debug_title_pseudonym" tools:ignore="MissingTranslation">Pseudonym</string>
+    <string name="dashboard_debug_title_user_secret" tools:ignore="MissingTranslation">User Secret</string>
+    <string name="dashboard_debug_example_messages_notification" tools:ignore="MissingTranslation">Message Notification</string>
+    <string name="dashboard_debug_example_sync_notification" tools:ignore="MissingTranslation">Sync Notification</string>
+    <string name="dashboard_debug_crash" tools:ignore="MissingTranslation">Crash!</string>
+    <string name="dashboard_debug_button_reset_user_secret" tools:ignore="MissingTranslation">Reset User Secret</string>
+
+</resources>

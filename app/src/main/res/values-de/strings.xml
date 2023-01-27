@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyScience</string>
+
+    <string name="login_welcome_title_text">Willkommen zu\nSmart4Health MyScience</string>
+
+    <string name="login_configure_consent_title_text">Einwilligung nach Aufklärung</string>
+    <string name="login_configure_consent_content_description">Einwilligung nach Aufklärung</string>
+    <string name="login_configure_consent_body_text">Bitte lesen Sie die Einwilligungserklärung sorgfältig durch, wählen Sie die Optionen zur detaillierten Verwendung Ihrer Daten aus und unterzeichnen Sie die Einwilligungserklärung zur Bereitstellung von Gesundheitsdaten für die Forschung digital.</string>
+    <string name="login_configure_consent_body_text_2">Nehmen Sie sich Zeit.</string>
+
+    <string name="login_sign_consent_title_text">Einwilligungserklärung signieren</string>
+    <string name="login_sign_consent_image_content_description">Einwilligungserklärung</string>
+    <string name="login_sign_consent_body_text">Im nächsten Schritt können Sie die Einwilligungserklärung digital unterschreiben.</string>
+    <string name="snackbar_login_sign_consent_launch_error">Start der Signierung fehlgeschlagen</string>
+
+    <string name="login_review_consent_toolbar_text">Einwilligungserklärung prüfen</string>
+    <string name="login_review_consent_pdf_page_content_description">PDF Seite</string>
+    <string name="menu_login_review_consent_view_externally">Extern öffnen</string>
+    <string name="snackbar_login_review_consent_download_error_text">Herunterladen des PDFs fehlgeschlagen</string>
+    <string name="snackbar_login_review_consent_open_externally_error_text">Kein PDF Viewer gefunden</string>
+
+    <string name="login_connect_chdp_title_text">Verbinden Sie Ihr Smart4Health Konto</string>
+    <string name="login_connect_chdp_image_content_description">Smart4Health Konto</string>
+    <string name="login_connect_chdp_body_text">Um eine Verbindung zu Ihrem smart4health-Konto herzustellen, leiten wir Sie auf die Smart4Health-Anmeldeseite weiter und bitten Sie, sich anzumelden und die Genehmigung für Ihre Gesundheitsdaten zu erteilen.</string>
+    <string name="snackbar_login_connect_chdp_upload_consent_failed">Hochladen der Einwilligungserklärung fehlgeschlagen</string>
+
+    <string name="login_data_selection_title_text">Gesundheitsdatenoptionen</string>
+
+    <string name="login_finished_title_text">Vielen Dank!</string>
+    <string name="login_finished_image_content_description">Ende</string>
+    <string name="login_finished_body_text">Ihre Gesundheitsdaten werden im Hintergrund hochgeladen und für die Forschung bereitgestellt</string>
+
+    <string name="dashboard_my_data_toolbar_text">Meine Daten</string>
+    <string name="dashboard_my_data_data_selection_title_text">Gesundheitsdatenoptionen</string>
+
+    <string name="dashboard_my_data_background_sharing_title_text">Datenübertragung</string>
+    <string name="dashboard_my_data_background_sharing_description_text">Gesundheitsdaten automatisch im Hintergrund übertragen, ohne die App zu öffnen.</string>
+    <string name="dashboard_my_data_background_sharing_share_now_text">Jetzt übertragen</string>
+
+    <string name="dashboard_my_data_revoke_title_text">Widerruf</string>
+    <string name="dashboard_my_data_revoke_description_text">Ich möchte meine Einwilligungserklärung für die Bereitstellung von Gesundheitsdaten widerrufen.</string>
+    <string name="dashboard_my_data_revoke_button_text">Jetzt widerrufen</string>
+
+    <string name="dashboard_my_data_revoke_dialog_title">Einwilligungserklärung widerrufen?</string>
+    <string name="dashboard_my_data_revoke_dialog_message">Die Gesundheitsdaten, die sie bisher bereitgestellt haben werden anonymisiert und können weiterhin für die Forschung verwendet werden. Die Verbindung zu Ihrem Smart4Health Account wird gelöscht und es können keine neue Daten für die Forschung bereitgestellt werden. Sind Sie sicher, dass Sie Ihre Einwilligungserklärung widerrufen möchten?</string>
+    <string name="dashboard_my_data_revoke_dialog_positive">Widerrufen</string>
+    <string name="dashboard_my_data_revoke_dialog_negative">Abbrechen</string>
+    <string name="snackbar_dashboard_my_data_revoke_consent_failed">Widerruf der Einwilligungserklärung fehlgeschlagen</string>
+
+    <string name="dashboard_my_data_login_error_title_text">Anmeldung fehlgeschlagen</string>
+    <string name="dashboard_my_data_login_error_description_text">Bitte melden Sie sich erneut mit Ihrem Smart4Health-Konto an</string>
+    <string name="dashboard_my_data_login_error_button_text">Anmelden</string>
+
+    <string name="dashboard_messages_toolbar_text">Nachrichten</string>
+    <string name="item_dashboard_messages_option_enable_recontact_description">Ich möchte Nachrichten erhalten, um z.B. gegebenenfalls zusätzliche für wissenschaftliche Fragen relevante Informationen zur Verfügung zu stellen.</string>
+    <string name="item_dashboard_messages_option_enable_recontact_title">Erneute Kontaktaufnahme</string>
+    <string name="dashboard_messages_icon_content_description_text">Nachrichten</string>
+    <string name="item_dashboard_message_moments_ago">Vor kurzem</string>
+    <string name="item_dashboard_messages_last_fetched_at">Aktualisiert %s</string>
+    <string name="item_dashboard_messages_last_fetched_at_recently">Vor kurzem aktualisiert</string>
+    <string name="item_dashboard_messages_never_fetched">Ziehen zum Aktualisieren</string>
+    <string name="item_messages_state_empty">Keine Nachrichten - %s</string>
+    <string name="item_messages_state_disabled">Empfangen von Nachrichten ausgeschaltet</string>
+    <string name="toast_message_failed_read">Lesen der Nachricht fehlgeschlagen</string>
+
+    <string name="menu_dashboard_message_mark_unread">Als ungelesen markieren</string>
+
+    <string name="dashboard_status_toolbar_text">Status</string>
+    <string name="dashboard_status_default_count">0</string>
+    <string name="dashboard_status_description_text_1">Datensätze wurden von mir bereitgestellt</string>
+    <string name="dashboard_status_description_text_2">Datensätze wurden insgesamt bereitgestellt</string>
+    <string name="dashboard_status_description_text_3">Bürger haben Gesundheitsdaten für die Forschung bereitgestellt</string>
+    <string name="snackbar_dashboard_status_statistics_failed">Lesen des Status fehlgeschlagen</string>
+
+    <string name="menu_dashboard_log_out">Abmelden</string>
+    <string name="menu_dashboard_oss">Open source</string>
+    <string name="snackbar_dashboard_account_mismatch">Falsches Smart4Health-Konto, bitte melden Sie sich mit Ihrem ursprünglichen Konto an</string>
+    <string name="snackbar_dashboard_message_fetch_failed">Lesen der Nachricht fehlgeschlagen</string>
+
+    <string name="notification_channel_name_messages">Nachrichten</string>
+    <string name="notification_channel_description_messages">Nachrichten von der Forschung</string>
+    <string name="notification_channel_name_sync">Datentransfer</string>
+    <string name="notification_channel_description_sync">Datentransfer fehlgeschlagen</string>
+    <string name="notification_sync_error_title">Datentransfer fehlgeschlagen</string>
+    <string name="notification_sync_error_text">Bitte melden Sie sich mit Ihrem Smart4Health-Konto erneut an</string>
+
+    <string name="required_badge_text">Erforderlich</string>
+
+    <string name="string_continue">Weiter</string>
+    <string name="back">Zurück</string>
+
+    <plurals name="numberOfHours">
+        <item quantity="one">Vor einer Stunde</item>
+        <item quantity="other">Vor %d Stunden</item>
+    </plurals>
+    <plurals name="numberOfDays">
+        <item quantity="one">Gestern</item>
+        <item quantity="other">Vor %d Tagen</item>
+    </plurals>
+    <plurals name="numberOfNewMessages">
+        <item quantity="one">Eine neue Nachricht</item>
+        <item quantity="other">%d neue Nachrichten</item>
+    </plurals>
+</resources>

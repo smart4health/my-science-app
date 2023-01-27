@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.healthmetrix.myscience.feature.statistics";
+option java_multiple_files = true;
+
+message StatsSettings {
+  int64 last_fetched_at = 1;
+  int32 user_resources_uploaded = 2;
+  int32 global_resources_uploaded = 3;
+  int32 global_users = 4;
+}

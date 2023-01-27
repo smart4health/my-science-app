@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_package = "com.healthmetrix.myscience.features.dataselection";
+option java_multiple_files = true;
+
+message DataSelectionSettings {
+  bool medications = 1;
+
+  bool allergies = 2;
+
+  bool problems = 3;
+
+  bool immunizations = 4;
+
+  bool procedures = 5;
+
+  bool medical_devices = 6;
+
+  bool vitals = 7;
+
+  bool diagnostic_results_laboratory = 8;
+
+  bool diagnostic_results_fitness = 9;
+
+  bool questionnaires = 10;
+}

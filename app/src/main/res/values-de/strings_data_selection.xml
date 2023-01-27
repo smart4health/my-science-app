@@ -1,0 +1,31 @@
+<resources>
+    <string name="ds_medications_title">Medikation</string>
+    <string name="ds_medications_description">Medikamente, die Sie derzeit einnehmen, bzw. in der Vergangenheit eingenommen haben, sowie Dosis und Datum der verschriebenen Medikamente.</string>
+
+    <string name="ds_allergies_title">Allergien und Unverträglichkeiten</string>
+    <string name="ds_allergies_description">Festgestelle Allergien, Unverträglichkeiten oder unerwünschte Wirkungen, die bei Kontakt oder Einnahme von bestimmten Substanzen auftreten.</string>
+
+    <string name="ds_problems_title">Klinische Probleme</string>
+    <string name="ds_problems_description">Informationen über einen Zustand, ein Problem, eine Diagnose oder ein anderes Ereignis, eine Situation oder eine Frage, die Anlass zur Sorge gab.</string>
+
+    <string name="ds_immunization_title">Schutzimpfungen</string>
+    <string name="ds_immunization_description">Angaben zu verabreichten Impfstoffen und Verabreichungszeitpunkt.</string>
+
+    <string name="ds_procedures_title">Chirurgische Eingriffe</string>
+    <string name="ds_procedures_description">Informationen zu durchgeführten Eingriffen. Beispiele hierfür sind chirurgische Eingriffe, endoskopische Eingriffe oder Biopsien.</string>
+
+    <string name="ds_medical_devices_title">Medizinische Implantate</string>
+    <string name="ds_medical_devices_description">Medizinische Implantate, wie künstliche Hüftgelenke oder Herzschrittmacher.</string>
+
+    <string name="ds_vitals_title">Vitalwerte</string>
+    <string name="ds_vitals_description">Vitalwerte, wie erfasste Körpergröße, Verlauf von Gewicht oder Herzfrequenz.</string>
+
+    <string name="ds_diagnostic_results_laboratory_title">Untersuchungsergebnisse</string>
+    <string name="ds_diagnostic_results_laboratory_description">Untersuchungsergebnisse, die durch Bluttests oder andere labortechnische Untersuchungen gewonnen wurden.</string>
+
+    <string name="ds_diagnostic_results_fitness_title">Fitness Daten</string>
+    <string name="ds_diagnostic_results_fitness_description">Fitness- und Übungsdaten, die z.B. über Sportuhren und andere Wearables am Körper erfasst wurden.</string>
+
+    <string name="ds_questionnaire_title">Fragebögen</string>
+    <string name="ds_questionnaire_description">Fragebögen oder Anamnesebögen, die Sie im Zusammenhang mit Ihrer Gesundheit erfasst haben.</string>
+</resources>

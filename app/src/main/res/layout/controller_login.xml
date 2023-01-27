@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/child_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        style="?attr/bottomSheetStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/s4h_grey_30_opaque"
+        android:clickable="true"
+        android:focusable="true"
+        app:behavior_peekHeight="?attr/loginMilestonesHeight"
+        app:layout_behavior="com.healthmetrix.myscience.feature.login.SelfCollapsingBottomSheetBehavior">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <com.healthmetrix.myscience.feature.login.MilestoneProgressView
+                android:id="@+id/milestone_progress_view"
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_marginHorizontal="16dp"
+                app:indicatorColor="@color/s4h_dark_turquoise"
+                app:layout_constraintBottom_toTopOf="@id/percentage_label_text_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:milestoneReachedColor="@color/s4h_darker_turquoise"
+                app:milestoneUnreachedColor="@color/s4h_white"
+                app:milestoneWeights="5,20,5,5"
+                app:trackColor="@color/s4h_turquoise" />
+
+
+            <TextView
+                android:id="@+id/percentage_label_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/milestone_progress_percentage_label_text"
+                android:textAppearance="?textAppearanceCaption"
+                app:layout_constraintBottom_toTopOf="@id/the_fold"
+                app:layout_constraintStart_toStartOf="@id/milestone_progress_view"
+                app:layout_constraintTop_toBottomOf="@id/milestone_progress_view" />
+
+            <TextView
+                android:id="@+id/percentage_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:minWidth="34dp"
+                android:textAppearance="?textAppearanceCaption"
+                app:layout_constraintBottom_toBottomOf="@id/percentage_label_text_view"
+                app:layout_constraintStart_toEndOf="@id/percentage_label_text_view"
+                app:layout_constraintTop_toTopOf="@id/percentage_label_text_view"
+                tools:text="100%" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/the_fold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="?attr/loginMilestonesHeight" />
+
+            <TextView
+                android:id="@+id/milestone_1_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/milestone_1_header_text"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintStart_toEndOf="@id/milestone_1_pointer"
+                app:layout_constraintTop_toBottomOf="@id/the_fold" />
+
+            <TextView
+                android:id="@+id/milestone_2_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/milestone_2_header_text"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintStart_toEndOf="@id/milestone_2_pointer"
+                app:layout_constraintTop_toBottomOf="@id/milestone_1_header" />
+
+            <TextView
+                android:id="@+id/milestone_3_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/milestone_3_header_text"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintStart_toEndOf="@id/milestone_3_pointer"
+                app:layout_constraintTop_toBottomOf="@id/milestone_2_header" />
+
+            <TextView
+                android:id="@+id/milestone_4_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/milestone_4_header_text"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintStart_toEndOf="@id/milestone_4_pointer"
+                app:layout_constraintTop_toBottomOf="@id/milestone_3_header" />
+
+            <ImageView
+                android:id="@+id/milestone_1_reached_indicator"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/milestone_reached_content_description"
+                android:src="@drawable/ic_baseline_check_24"
+                android:textAppearance="?textAppearanceBody2"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/milestone_1_header"
+                app:layout_constraintDimensionRatio="1,1"
+                app:layout_constraintEnd_toEndOf="@id/milestone_progress_view"
+                app:layout_constraintTop_toTopOf="@id/milestone_1_header"
+                app:tint="@color/material_green_800"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/milestone_2_reached_indicator"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/milestone_reached_content_description"
+                android:src="@drawable/ic_baseline_check_24"
+                android:textAppearance="?textAppearanceBody2"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/milestone_2_header"
+                app:layout_constraintDimensionRatio="1,1"
+                app:layout_constraintEnd_toEndOf="@id/milestone_progress_view"
+                app:layout_constraintTop_toTopOf="@id/milestone_2_header"
+                app:tint="@color/material_green_800"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/milestone_3_reached_indicator"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/milestone_reached_content_description"
+                android:src="@drawable/ic_baseline_check_24"
+                android:textAppearance="?textAppearanceBody2"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/milestone_3_header"
+                app:layout_constraintDimensionRatio="1,1"
+                app:layout_constraintEnd_toEndOf="@id/milestone_progress_view"
+                app:layout_constraintTop_toTopOf="@id/milestone_3_header"
+                app:tint="@color/material_green_800"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/milestone_4_reached_indicator"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/milestone_reached_content_description"
+                android:src="@drawable/ic_baseline_check_24"
+                android:textAppearance="?textAppearanceBody2"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/milestone_4_header"
+                app:layout_constraintDimensionRatio="1,1"
+                app:layout_constraintEnd_toEndOf="@id/milestone_progress_view"
+                app:layout_constraintTop_toTopOf="@id/milestone_4_header"
+                app:tint="@color/material_green_800"
+                tools:visibility="visible" />
+
+
+            <ImageView
+                android:id="@+id/milestone_1_pointer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/milestone_pointer_content_description"
+                android:src="@drawable/ic_baseline_chevron_right_24"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/milestone_1_header"
+                app:layout_constraintDimensionRatio="1,1"
+                app:layout_constraintStart_toStartOf="@id/milestone_progress_view"
+                app:layout_constraintTop_toTopOf="@id/milestone_1_header" />
+
+            <ImageView
+                android:id="@+id/milestone_2_pointer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/milestone_pointer_content_description"
+                android:src="@drawable/ic_baseline_chevron_right_24"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/milestone_2_header"
+                app:layout_constraintDimensionRatio="1,1"
+                app:layout_constraintStart_toStartOf="@id/milestone_progress_view"
+                app:layout_constraintTop_toTopOf="@id/milestone_2_header" />
+
+            <ImageView
+                android:id="@+id/milestone_3_pointer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/milestone_pointer_content_description"
+                android:src="@drawable/ic_baseline_chevron_right_24"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/milestone_3_header"
+                app:layout_constraintDimensionRatio="1,1"
+                app:layout_constraintStart_toStartOf="@id/milestone_progress_view"
+                app:layout_constraintTop_toTopOf="@id/milestone_3_header" />
+
+            <ImageView
+                android:id="@+id/milestone_4_pointer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/milestone_pointer_content_description"
+                android:src="@drawable/ic_baseline_chevron_right_24"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/milestone_4_header"
+                app:layout_constraintDimensionRatio="1,1"
+                app:layout_constraintStart_toStartOf="@id/milestone_progress_view"
+                app:layout_constraintTop_toTopOf="@id/milestone_4_header" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

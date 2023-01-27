@@ -1,0 +1,18 @@
+<resources>
+    <string name="welcome_carousel_content_description">Image showing steps of using the app</string>
+    <string name="welcome_carousel_previous_content_description">Button to go to the previous introduction step</string>
+    <string name="welcome_carousel_next_content_description">Button to go to the next introduction step</string>
+
+    <string-array name="welcome_carousel_text">
+        <item>You downloaded the MyScience App from the Google Play Store</item>
+        <item>Within the MyScience App you will go through the following steps</item>
+        <item>You read through the consent form and sign it</item>
+        <item>You sign into your Smart4Health account and connect the MyScience App</item>
+        <item>In addition to the core data set, you can select additional data from your Smart4Health account to be provided to the Research Platform</item>
+        <item>You confirm the data provision of the core data set and the potentially selected optional data before it is uploaded</item>
+        <item>We remove identifying information from your data</item>
+        <item>The MyScience App adds a code to your data</item>
+        <item>The code is stored only in your MyScience App</item>
+        <item>We store the coded data in the Research Platform</item>
+    </string-array>
+</resources>

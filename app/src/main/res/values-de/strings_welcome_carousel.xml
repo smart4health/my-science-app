@@ -1,0 +1,18 @@
+<resources>
+    <string name="welcome_carousel_content_description">Bild, das die einzelnen Schritte der Benutzung der App zeigt</string>
+    <string name="welcome_carousel_previous_content_description">Schaltfläche, um zum vorherigen Einführungsschritt zu gelangen</string>
+    <string name="welcome_carousel_next_content_description">Schaltfläche für den nächsten Einführungsschritt</string>
+
+    <string-array name="welcome_carousel_text">
+        <item>Sie haben die MyScience App aus dem Google Play Store heruntergeladen</item>
+        <item>In der MyScience App durchlaufen Sie die folgenden Schritte</item>
+        <item>Sie lesen die Einverständniserklärung durch und unterschreiben diese</item>
+        <item>Sie melden sich bei Ihrem Smart4Health-Konto an und verknüpfen die MyScience App</item>
+        <item>Neben dem Kerndatensatz können Sie weitere Daten aus Ihrem Smart4Health-Konto auswählen, die Sie der Forschungsplattform zur Verfügung stellen möchten</item>
+        <item>Sie bestätigen die Datenbereitstellung des Kerndatensatzes und der eventuell ausgewählten optionalen Daten, bevor diese hochgeladen werden</item>
+        <item>Wir entfernen personenbezogene Informationen aus Ihren Daten</item>
+        <item>Die MyScience App fügt einen Code zu Ihren Daten hinzu</item>
+        <item>Der Code wird nur in Ihrer MyScience App gespeichert</item>
+        <item>Wir speichern die kodierten Daten in der Forschungsplattform</item>
+    </string-array>
+</resources>

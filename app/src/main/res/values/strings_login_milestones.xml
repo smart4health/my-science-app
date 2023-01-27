@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="milestone_progress_percentage_label_text">Your progress: </string>
+    <string name="milestone_progress_percentage_text">%1$3d%%</string>
+    <string name="remaining_time_text">%1$2d min</string>
+    <string name="clock_icon_content_description">Icon for the amount of time remaining</string>
+
+    <string name="milestone_1_header_text">Introduction</string>
+    <string name="milestone_2_header_text">Read consent</string>
+    <string name="milestone_3_header_text">Sign consent</string>
+    <string name="milestone_4_header_text">View consent</string>
+    <string name="milestone_5_header_text">Connect your Smart4Health account</string>
+    <string name="milestone_6_header_text">Select health data for provision</string>
+
+    <string name="milestone_pointer_content_description">Indicator for the milestone in progress</string>
+    <string name="milestone_reached_content_description">Indicator for the milestones_reached</string>
+</resources>

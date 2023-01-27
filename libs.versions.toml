@@ -1,0 +1,120 @@
+[versions]
+kotlin = "1.8.0"
+hilt = "2.44.2"
+conductor = "3.1.9"
+protobuf = "3.21.12"
+result = "1.1.16"
+coroutines = "1.6.4"
+hapi = "5.3.3" # 5.4+ uses caffeine 3.0+ which is incompatible with Android < 26...
+junit = "5.9.2"
+sqldelight = "1.5.5"
+agp = "7.4.0"
+
+[libraries]
+
+androidx-activity = "androidx.activity:activity:1.6.1"
+androidx-appcompat = "androidx.appcompat:appcompat:1.6.0"
+androidx-browser = "androidx.browser:browser:1.4.0"
+androidx-constraintlayout = "androidx.constraintlayout:constraintlayout:2.1.4"
+androidx-core = "androidx.core:core-ktx:1.9.0"
+androidx-datastore = "androidx.datastore:datastore:1.1.0-alpha01"
+androidx-fragment = "androidx.fragment:fragment:1.5.5"
+androidx-interpolator = "androidx.interpolator:interpolator:1.0.0"
+androidx-lifecycle = "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+androidx-recyclerview = "androidx.recyclerview:recyclerview:1.2.1"
+androidx-swiperefresh = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+androidx-viewbinding = "androidx.databinding:viewbinding:7.4.0"
+androidx-viewpager2 = "androidx.viewpager2:viewpager2:1.0.0"
+androidx-work = "androidx.work:work-runtime-ktx:2.7.1"
+
+assertj = "org.assertj:assertj-core:3.24.2"
+
+caffeine = "com.github.ben-manes.caffeine:caffeine:2.9.3"
+
+conductor = { module = "com.bluelinelabs:conductor", version.ref = "conductor" }
+conductor-archlifecycle = { module = "com.bluelinelabs:conductor-archlifecycle", version.ref = "conductor" }
+
+d4l-error = "care.data4life.hc-result-sdk-kmp:error-android:0.2.0"
+d4l-fhir = "care.data4life.hc-fhir-sdk-java:fhir-java:1.6.2"
+d4l-sdk-android = "care.data4life.hc-sdk-kmp:sdk-android:1.15.1"
+d4l-sdk-core = "care.data4life.hc-sdk-kmp:sdk-core:1.15.1"
+d4l-util-android = "care.data4life.hc-util-sdk-kmp:util-android:1.10.0"
+
+fhir-ucum = "org.fhir:ucum:1.0.3"
+
+firebase-auth = "com.google.firebase:firebase-auth-ktx:21.1.0"
+firebase-crashlytics = "com.google.firebase:firebase-crashlytics-ktx:18.3.3"
+
+# DO NOT UPGRADE unless the d4l libs are upgraded first, because
+#                the old version of tink in use there has a conflicting
+#                protobuf (protobuf-lite not protobuf-javalite)
+google-crypto-tink = "com.google.crypto.tink:tink-android:1.4.0"
+
+hapi-base = { module = "ca.uhn.hapi.fhir:hapi-fhir-base", version.ref = "hapi" }
+hapi-structures-r4 = { module = "ca.uhn.hapi.fhir:hapi-fhir-structures-r4", version.ref = "hapi" }
+
+hilt = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+junit-jupiter-params = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-coroutines-play = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "coroutines" }
+
+kotlinx-serialization-json = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1"
+
+leakcanary = "com.squareup.leakcanary:leakcanary-android:2.10"
+
+material = "com.google.android.material:material:1.8.0"
+
+mockk = "io.mockk:mockk:1.13.3"
+
+okhttp = "com.squareup.okhttp3:okhttp:4.10.0"
+
+osslicenses = "com.google.android.gms:play-services-oss-licenses:17.0.0"
+
+protobuf-javalite = { module = "com.google.protobuf:protobuf-javalite", version.ref = "protobuf" }
+protobuf-protoc = { module = "com.google.protobuf:protoc", version.ref = "protobuf" }
+
+result = { module = "com.michael-bull.kotlin-result:kotlin-result", version.ref = "result" }
+result-coroutines = { module = "com.michael-bull.kotlin-result:kotlin-result-coroutines", version.ref = "result" }
+
+retrofit2 = "com.squareup.retrofit2:retrofit:2.9.0"
+retrofit2-converter-kotlinx = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0"
+
+sqldelight-android = { module = "com.squareup.sqldelight:android-driver", version.ref = "sqldelight" }
+sqldelight-coroutines = { module = "com.squareup.sqldelight:coroutines-extensions-jvm", version.ref = "sqldelight" }
+sqldelight-driver = { module = "com.squareup.sqldelight:sqlite-driver", version.ref = "sqldelight" }
+
+threetenabp = "com.jakewharton.threetenabp:threetenabp:1.4.4"
+
+[bundles]
+
+test-implementation = [
+    "junit-jupiter-api",
+    "junit-jupiter-params",
+    "assertj",
+    "mockk"
+]
+
+test-runtime = [
+    "junit-jupiter-engine"
+]
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "agp" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+com-github-benmanes-versions = "com.github.ben-manes.versions:0.44.0"
+com-google-firebase-crashlytics = "com.google.firebase.crashlytics:2.9.2"
+com-google-gms-googleservices = "com.google.gms.google-services:4.3.15"
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+org-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+org-jetbrains-kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+com-google-protobuf = "com.google.protobuf:0.9.1"
+com-squareup-sqldelight = { id = "com.squareup.sqldelight", version.ref = "sqldelight" }
+com-google-android-gms-osslicensesplugin = "com.google.android.gms.oss-licenses-plugin:0.10.5"
+com-google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }

@@ -1,0 +1,43 @@
+import com.healthmetrix.myscience.feature.messages.MessageState;
+
+CREATE TABLE messages(
+    id TEXT NOT NULL PRIMARY KEY,
+    state TEXT AS MessageState NOT NULL,
+    text TEXT NOT NULL,
+    title TEXT NOT NULL,
+    linked_request TEXT NOT NULL,
+    recipient_id TEXT NOT NULL,
+    inserted_at INTEGER AS Long NOT NULL,
+    created_at INTEGER AS Long NOT NULL,
+    updated_at INTEGER AS Long
+);
+
+insert:
+INSERT INTO messages VALUES ?;
+
+-- instead of upsert, which can get annoying on older api levels
+setState:
+UPDATE messages
+SET state = :state
+WHERE id = :id;
+
+countAll:
+SELECT count(*) FROM messages;
+
+countUnread:
+SELECT count(*) FROM messages WHERE state = 'UNREAD';
+
+clear:
+DELETE FROM messages;
+
+getById:
+SELECT * FROM messages WHERE id = :id;
+
+deleteById:
+DELETE FROM messages WHERE id = :id;
+
+getAll:
+SELECT * FROM messages ORDER BY inserted_at ASC;
+
+getAllOrderByCreatedAt:
+SELECT * FROM messages ORDER BY created_at DESC;

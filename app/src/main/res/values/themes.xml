@@ -1,0 +1,71 @@
+<resources>
+
+    <style name="Smart4HealthTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/s4h_dark_blue_100</item>
+        <item name="colorPrimaryVariant">@color/s4h_dark_blue_80</item>
+        <item name="colorOnPrimary">@color/s4h_white</item>
+
+        <item name="colorSecondary">@color/s4h_orange</item>
+        <!-- <item name="colorSecondaryVariant"></item> -->
+        <item name="colorOnSecondary">@color/s4h_black</item>
+
+        <item name="android:colorBackground">@color/s4h_backgrounds</item>
+        <!-- colorOnBackground doesn't seem to work for text -->
+        <item name="colorOnBackground">@color/s4h_dark_blue_100</item>
+        <item name="colorSurface">@color/s4h_backgrounds</item>
+        <item name="colorOnSurface">@color/s4h_dark_blue_100</item>
+
+        <item name="android:textColorPrimary">@color/s4h_grey_100</item>
+        <item name="android:textColorSecondary">@color/s4h_dark_blue_100</item>
+
+        <!-- Not specified by s4h -->
+        <item name="colorError">#C62828</item>
+        <item name="colorOnError">@color/s4h_white</item>
+
+        <item name="stepperActiveDrawable">@drawable/circle_filled</item>
+        <item name="stepperInactiveDrawable">@drawable/circle_hollow</item>
+        <item name="stepperInnerMargin">8dp</item>
+
+        <!-- Text appearances -->
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Smart4Health.Headline2</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Smart4Health.Headline6</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Smart4Health.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Smart4Health.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Smart4Health.Caption</item>
+
+        <item name="materialButtonStyle">@style/Widget.Smart4Health.Button</item>
+
+        <item name="toolbarStyle">@style/Widget.Smart4Health.Toolbar</item>
+
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- components -->
+        <item name="shapeAppearanceSmallComponent">
+            @style/ShapeAppearance.Smart4Health.SmallComponent
+        </item>
+
+        <item name="snackbarStyle">@style/Widget.Smart4Health.Snackbar</item>
+
+        <item name="materialAlertDialogTheme">
+            @style/ThemeOverlay.Smart4Health.MaterialAlertDialog
+        </item>
+
+        <item name="bottomSheetStyle">@style/Widget.Smart4Health.BottomSheet</item>
+
+        <item name="loginMilestonesHeight">56dp</item>
+    </style>
+
+    <style name="ThemeOverlay.Smart4Health.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">
+            @style/MaterialAlertDialog.Smart4Health.Title.Text
+        </item>
+        <item name="materialAlertDialogBodyTextStyle">
+            @style/MaterialAlertDialog.Smart4Health.Body.Text
+        </item>
+        <item name="alertDialogStyle">
+            @style/MaterialAlertDialog.Smart4Health
+        </item>
+    </style>
+
+</resources>

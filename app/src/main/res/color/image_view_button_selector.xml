@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- .38 per spec, can't find trusty attr though -->
+    <!-- otherwise inspired by material_on_background_disabled.xml -->
+    <item android:alpha=".38" android:color="?colorOnBackground" android:state_enabled="false" />
+    <item android:color="?colorControlNormal" />
+</selector>

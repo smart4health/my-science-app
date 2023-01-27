@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/s4h_white"
+    android:paddingBottom="?attr/loginMilestonesHeight"
+    android:tag="content">
+
+    <!-- The documentation for layerType recommends -->
+    <!-- only activating hardware layers for the duration -->
+    <!-- of animation, but that does not appear to work -->
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorSurface"
+        android:layerType="hardware" />
+
+</FrameLayout>

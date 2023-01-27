@@ -1,0 +1,31 @@
+<resources>
+    <string name="ds_medications_title">Medications</string>
+    <string name="ds_medications_description">Medication you are currently taking or have taken in the past, dose and date of prescribed medication.</string>
+
+    <string name="ds_allergies_title">Allergies and Intolerances</string>
+    <string name="ds_allergies_description">Includes clinical assessment of an allergy or intolerance; a propensity, or a potential risk to an individual, to have an adverse reaction on future exposure to the specified substance, or class of substance</string>
+
+    <string name="ds_problems_title">Problems</string>
+    <string name="ds_problems_description">Information about a condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern</string>
+
+    <string name="ds_immunization_title">Immunizations</string>
+    <string name="ds_immunization_description">Details of vaccines administered and time of administration.</string>
+
+    <string name="ds_procedures_title">Surgical interventions</string>
+    <string name="ds_procedures_description">Information on procedures performed. Examples are surgical procedures, endoscopic procedures or biopsies.</string>
+
+    <string name="ds_medical_devices_title">Medical implants</string>
+    <string name="ds_medical_devices_description">Medical implants, such as artificial hip joints or pacemakers.</string>
+
+    <string name="ds_vitals_title">Vital signs</string>
+    <string name="ds_vitals_description">Vital signs, such as recorded height, weight history or heart rate.</string>
+
+    <string name="ds_diagnostic_results_laboratory_title">Laboratory results</string>
+    <string name="ds_diagnostic_results_laboratory_description">Examination results obtained by blood  or other laboratory tests.</string>
+
+    <string name="ds_diagnostic_results_fitness_title">Fitness data</string>
+    <string name="ds_diagnostic_results_fitness_description">Fitness and exercise data collected e.g. via sports watches and other wearables on the body.</string>
+
+    <string name="ds_questionnaire_title">Questionnaire</string>
+    <string name="ds_questionnaire_description">Questionnaires or medical history forms that you have collected in connection with your health.</string>
+</resources>

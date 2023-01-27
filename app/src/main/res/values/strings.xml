@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">MyScience</string>
+
+    <string name="login_welcome_title_text">Welcome to\nSmart4Health MyScience</string>
+
+    <string name="login_configure_consent_title_text">Informed consent</string>
+    <string name="login_configure_consent_content_description">Informed consent</string>
+    <string name="login_configure_consent_body_text">Please read the information and consent carefully, select the options on how to use your data in detail and sign the consent digitally to provide health data for research.</string>
+    <string name="login_configure_consent_body_text_2">Take your time.</string>
+
+    <string name="login_sign_consent_title_text">Sign Consent</string>
+    <string name="login_sign_consent_image_content_description">Sign consent image</string>
+    <string name="login_sign_consent_body_text">In the next step, you can digitally sign the consent form.</string>
+    <string name="snackbar_login_sign_consent_launch_error">Failed to launch signing</string>
+
+    <string name="login_review_consent_toolbar_text">Review Consent</string>
+    <string name="login_review_consent_pdf_page_content_description">PDF page</string>
+    <string name="menu_login_review_consent_view_externally">View Externally</string>
+    <string name="snackbar_login_review_consent_download_error_text">Failed to download PDF</string>
+    <string name="snackbar_login_review_consent_open_externally_error_text">No PDF viewer found</string>
+
+    <string name="login_connect_chdp_title_text">Connect your Smart4Health account</string>
+    <string name="login_connect_chdp_image_content_description">Connect CHDP</string>
+    <string name="login_connect_chdp_body_text">To connect to your Smart4Health account, we will redirect you to the Smart4Health login page and ask you to login and give authorization to your health data.</string>
+    <string name="snackbar_login_connect_chdp_upload_consent_failed">Failed to upload consent</string>
+
+    <string name="login_data_selection_title_text">Health Data Options</string>
+
+    <string name="login_finished_title_text">Thank you!</string>
+    <string name="login_finished_image_content_description">Login finished</string>
+    <string name="login_finished_body_text">The data you selected will be synced in the background and made available for health research</string>
+
+    <string name="dashboard_my_data_toolbar_text">My Data</string>
+    <string name="dashboard_my_data_data_selection_title_text">Health Data Options</string>
+
+    <string name="dashboard_my_data_background_sharing_title_text">Data transmission</string>
+    <string name="dashboard_my_data_background_sharing_description_text">Automatically transfer health data in the background without opening the app.</string>
+    <string name="dashboard_my_data_background_sharing_share_now_text">Share Now</string>
+
+    <string name="dashboard_my_data_revoke_title_text">Revoke</string>
+    <string name="dashboard_my_data_revoke_description_text">I would like to revoke my declaration of consent for the provision of health data.</string>
+    <string name="dashboard_my_data_revoke_button_text">Revoke Now</string>
+
+    <string name="dashboard_my_data_revoke_dialog_title">Revoke consent?</string>
+    <string name="dashboard_my_data_revoke_dialog_message">The health data you have previously provided will be anonymised and can still be used for research. The connection to your Smart4Health account will be deleted and no new data can be provided for research. Are you sure you want to revoke your consent?</string>
+    <string name="dashboard_my_data_revoke_dialog_positive">Revoke</string>
+    <string name="dashboard_my_data_revoke_dialog_negative">Cancel</string>
+    <string name="snackbar_dashboard_my_data_revoke_consent_failed">Failed to revoke consent</string>
+
+    <string name="dashboard_my_data_login_error_title_text">Login Error</string>
+    <string name="dashboard_my_data_login_error_description_text">Please log in to the Smart4Health platform again.</string>
+    <string name="dashboard_my_data_login_error_button_text">Login</string>
+
+    <string name="dashboard_messages_toolbar_text">Messages</string>
+    <string name="item_dashboard_messages_option_enable_recontact_description">I would like to receive messages, e.g. to provide additional information relevant to scientific questions, if necessary.</string>
+    <string name="item_dashboard_messages_option_enable_recontact_title">Re-contact</string>
+    <string name="dashboard_messages_icon_content_description_text">Message icon</string>
+    <string name="item_dashboard_message_moments_ago">Moments ago</string>
+    <string name="item_dashboard_messages_last_fetched_at">Updated %s</string>
+    <string name="item_dashboard_messages_last_fetched_at_recently">Updated recently</string>
+    <string name="item_dashboard_messages_never_fetched">Pull to refresh</string>
+    <string name="item_messages_state_empty">No messages - %s</string>
+    <string name="item_messages_state_disabled">Messages disabled</string>
+    <string name="toast_message_failed_read">Failed to read message</string>
+
+    <string name="menu_dashboard_message_mark_unread">Mark unread</string>
+
+    <string name="dashboard_status_toolbar_text">Status</string>
+    <string name="dashboard_status_default_count">0</string>
+    <string name="dashboard_status_description_text_1">Health records were provided by you</string>
+    <string name="dashboard_status_description_text_2">Health records were provided in total</string>
+    <string name="dashboard_status_description_text_3">Citizens have provided health data for research</string>
+    <string name="snackbar_dashboard_status_statistics_failed">Failed to fetch statistics</string>
+
+
+    <string name="menu_dashboard_log_out">Log Out</string>
+    <string name="menu_dashboard_oss">Open source</string>
+    <string name="snackbar_dashboard_account_mismatch">Wrong CHDP account, please try again or log out</string>
+    <string name="snackbar_dashboard_message_fetch_failed">Failed to fetch messages</string>
+
+
+    <string name="notification_channel_name_messages">Messages</string>
+    <string name="notification_channel_description_messages">Messages from researchers</string>
+    <string name="notification_channel_name_sync">Sync</string>
+    <string name="notification_channel_description_sync">Errors from background syncing</string>
+    <string name="notification_sync_error_title">Failed to sync data</string>
+    <string name="notification_sync_error_text">Please log in again</string>
+
+    <string name="required_badge_text">Required</string>
+
+    <string name="back">Back</string>
+    <string name="string_continue">Continue</string>
+
+    <plurals name="numberOfHours">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="numberOfDays">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="numberOfNewMessages">
+        <item quantity="one">%d new message</item>
+        <item quantity="other">%d new messages</item>
+    </plurals>
+</resources>

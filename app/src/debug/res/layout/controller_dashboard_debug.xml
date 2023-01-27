@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="?toolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="toolbar"
+        app:menu="@menu/menu_dashboard"
+        app:title="@string/dashboard_debug_toolbar_text" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:tag="content">
+
+        <TextView
+            android:id="@+id/user_secret_title"
+            style="?textAppearanceHeadline5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/dashboard_debug_title_user_secret"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/debug_user_secret_body"
+            style="?textAppearanceBody1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:lines="2"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_secret_title"
+            tools:text="The debug_user_secret_body" />
+
+        <Button
+            android:id="@+id/debug_delete_user_secret_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/dashboard_debug_button_reset_user_secret"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/debug_pseudonym_body" />
+
+        <TextView
+            android:id="@+id/debug_pseudonym_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/dashboard_debug_title_pseudonym"
+            android:textAppearance="?textAppearanceHeadline5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/debug_user_secret_body" />
+
+        <TextView
+            android:id="@+id/debug_pseudonym_body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?textAppearanceBody1"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/debug_pseudonym_title"
+            tools:text="The debug_pseudonym_body" />
+
+        <View
+            android:id="@+id/debug_divider_1"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/s4h_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/debug_delete_user_secret_button" />
+
+        <Button
+            android:id="@+id/debug_example_messages_notification_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/dashboard_debug_example_messages_notification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/debug_divider_1" />
+
+        <Button
+            android:id="@+id/debug_example_sync_notification_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/dashboard_debug_example_sync_notification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/debug_example_messages_notification_button" />
+
+        <View
+            android:id="@+id/debug_divider_2"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/s4h_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/debug_example_sync_notification_button" />
+
+        <Button
+            android:id="@+id/debug_crash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/dashboard_debug_crash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/debug_divider_2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
