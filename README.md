@@ -1,8 +1,14 @@
 # Smart4Health MyScience App
 
-<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"/>
+## Acknowledgements
+
+<img src="./img/eu.jpg" align="left" alt="European Flag" width="60">
+
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 826117.
 
 ## About this app
+
+<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"/>
 
 With the MyScience App you have the possibility of providing your health data for research and scientific purposes after
 you complete a separate consent. Therein, you can select the purpose for your data provision, decide if you want to
