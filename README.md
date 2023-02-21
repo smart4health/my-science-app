@@ -135,3 +135,28 @@ SIGNING_CONFIG=upload ./gradlew bundleRelease copyReleaseBundle
 ```
 
 Output in `app/build/outputs/bundle/release/com.healthmetrix.s4h.myscience-*.aab`
+
+
+## Code Stats
+Generated with [tokei](https://github.com/XAMPPRocky/tokei)
+
+```
+===============================================================================
+ Language            Files        Lines         Code     Comments       Blanks
+===============================================================================
+ Batch                   1           89           68            0           21
+ JSON                    2          133          133            0            0
+ Kotlin                132         8992         7506          296         1190
+ Prolog                  1           21           18            0            3
+ Protocol Buffers        5          107           77            0           30
+ Shell                   1          234          100          109           25
+ TOML                    1          120           89            3           28
+ XML                    98         7702         7370           25          307
+-------------------------------------------------------------------------------
+ Markdown                1          139            0          105           34
+ |- Shell                1            4            4            0            0
+ (Total)                            143            4          105           34
+===============================================================================
+ Total                 242        17537        15361          538         1638
+===============================================================================
+```
